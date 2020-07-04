@@ -1,0 +1,36 @@
+{
+  "name": "boiler-plate-mern-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engine": {
+    "node": "13.2.0",
+    "npm": "6.13.1"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "backend": "nodemon server/index.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikhilrathor/Boiler-Plate-MERN-STACK.git"
+  },
+  "author": "Nikhil Rathor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikhilrathor/Boiler-Plate-MERN-STACK/issues"
+  },
+  "homepage": "https://github.com/nikhilrathor/Boiler-Plate-MERN-STACK#readme",
+  "dependencies": {
+    "bcrypt": "^4.0.1",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.3"
+  }
+}
